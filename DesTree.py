@@ -1,7 +1,7 @@
-def warn(*args, **kwargs):
+'''def warn(*args, **kwargs):
     pass
 import warnings
-warnings.warn = warn
+warnings.warn = warn'''
 
 import numpy as np
 from sklearn.tree import DecisionTreeClassifier
@@ -30,6 +30,7 @@ data = formatData("poker-hand-training-true.data.txt")
 
 
 attributes = np.array(data[1])
+print(attributes)
 classifier = np.array(data[0])
 classifier = classifier.reshape(len(classifier),1)
 
