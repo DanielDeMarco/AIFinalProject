@@ -8,9 +8,15 @@ from sklearn.cross_validation import train_test_split
 from sklearn.metrics import roc_curve, auc
 
 link = "http://archive.ics.uci.edu/ml/machine-learning-databases/poker/poker-hand-training-true.data"
-import urllib.request
+import urllib.request #python 3
 with urllib.request.urlopen(link) as url:
 	data = url.read()
+
+#python2.7
+'''import urllib2 #python 2.7
+url = urllib2.urlopen(link)
+data = url.read()'''
+
 
 dataString = str(data)
 dataLines = dataString.split("\\r\\n")
