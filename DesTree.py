@@ -44,3 +44,5 @@ print(clf.predict([1,1,1,13,2,4,2,3,1,12]))
 print(clf.predict([4,1,4,13,4,12,4,11,4,10]))
 
 
+clf.predict_proba(testData)
+
